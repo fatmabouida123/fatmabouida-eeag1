@@ -1,0 +1,96 @@
+public class Etudiant{
+     int id;
+     String Nom,email; Note[]notes;
+
+    public Etudiant( int id,String Nom,String email,  Note[] notes){
+        this.id=id;
+        this.Nom=Nom;
+        this.notes=new notes[10];
+
+    }
+
+    public String toString() {
+        String str ="";
+        str += notes[0].toString();
+        str += notes[1].toString();
+        str += notes[2].toString();
+        str += notes[3].toString();
+        str += notes[4].toString();
+        str += notes[5].toString();
+        str += notes[6].toString();
+        str += notes[7].toString();
+        str += notes[8].toString();
+        str += notes[9].toString();
+        return "id=" + id + "nom=" + nom + "Liste des notes" + str;
+    }
+
+    
+    public static moy(Note[]notes){
+
+
+          float getMoy() {
+             int var=0;
+             int i;
+            for (i=0;i<10;i++)
+                var+=notes[i]
+
+
+            return var/10; }
+        }
+
+}
+
+public class Main{
+    public static void main(String[] args){
+        Groupe r1=new Groupe("EEAG1");
+        System.out.println(r1);
+    }
+}
+class Note {
+    String mat;
+    double note, double coef;
+
+
+    public Note(String mat, double note, double coef) {
+        this.mat = mat;
+        this.note = note;
+        this.coef = coef;
+    }
+
+
+}
+class Etudiant {
+    int id;
+    String nom, email;
+    Note[] notes;
+
+    public Etudiant(int id, String nom, String email) {
+        this.id = id;
+        this.nom = nom;
+        this.email = email;
+        this.notes = new Note[10];
+    }
+
+
+    
+}
+class Groupe {
+    String nom;
+    Etudiant[] list_etuds;
+
+    Groupe(String nom) {
+        this.nom = nom;
+        list_etuds = new Etudiant[20];
+    }
+    public String toString(){
+        return"nom="+nom;
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Etudiant etudiant1 = new Etudiant(1, "ahmed,14.3");
+        System.out.println(etudiant1);
+        etudiant1.getmoy(é"");
+        System.out.println(etudiant1);
+
+
